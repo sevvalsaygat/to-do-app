@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "backend:serve": "json-server --watch backend/db.json --port 3001 --routes backend/routes.json"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "json-server": "^0.17.3",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1"
   }
